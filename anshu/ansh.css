@@ -1,0 +1,154 @@
+*{
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Body{
+  border: 2px solid rgb(255, 0, 0);
+  background-color: rgb(66, 158, 238);
+  width: 100%;
+  height: 820px;
+  left: 0;
+  top: 0;
+}
+
+.left{
+  border: 0px solid palegreen;
+  color: burlywood;
+  display: inline-block;
+  position: absolute;
+  left: 34px;
+  top: 11px;
+}
+
+div.content{
+  cursor: pointer;
+  border: 3px solid brown;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  display: block;
+  max-width: 450px;
+  min-height: 200px;
+  margin:15px auto;
+  text-align: center;
+  padding: 10px;
+  color: rgb(190, 161, 123);
+  top:20px;
+  height: 680px;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 14%), 0 1px 14px 2px rgb(0 0 0 / 12%), 0 0 5px -3px rgb(0 0 0 / 30%);
+
+  animation-name: bordercolr;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+div.right{
+  border: 0px solid violet;
+  display: inline-block;
+  position: absolute;
+  right: 45px;
+  top: 20px;
+  width: max-content;
+}
+
+@keyframes pulse{
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scale3d(1.06,1.06,1.06);
+  }
+  
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+@keyframes bordercolr{
+  0%{
+    border-top: 3px solid red;
+  }
+  25%{
+    border-left: 3px solid rgb(243, 247, 19);
+  }
+  75%{
+    border-bottom: 3px solid rgb(76, 134, 211);
+  }
+  100%{
+    border-right: 3px solid rgb(61, 114, 228);
+  }
+}
+
+div.content img{
+  border: 1px dashed black;
+  border-radius: 10px;
+}
+
+.slideshow-container {
+  max-width: 430px;
+  position: relative;
+  margin: auto;
+}
+
+div.slideshow-container img{
+  max-width: fit-content;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(184, 170, 170);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.Footer{
+  display: block;
+  bottom: 0px;
+  align-items: center;
+  text-align: center;
+}
+
+.ancher{
+  text-decoration: none;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.ancher:hover{
+  background-color: #000000;
+  color: white;
+}
+
+div.content:hover{
+  transform: scale3d(1.06,1.06,1.06);
+  
+}
